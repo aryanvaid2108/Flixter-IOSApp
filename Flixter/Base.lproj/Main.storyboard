@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.9710144927537" y="802.90178571428567"/>
+            <point key="canvasLocation" x="2538" y="581"/>
         </scene>
         <!--Movies Grid View Controller-->
         <scene sceneID="r1U-XQ-Mq2">
@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qln-ja-sxp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2995.6521739130435" y="802.90178571428567"/>
+            <point key="canvasLocation" x="2538" y="-214"/>
         </scene>
         <!--Movie Details View Controller-->
         <scene sceneID="jxU-iT-0gk">
@@ -226,7 +226,7 @@
                         <outlet property="posterView" destination="5GA-8F-iin" id="l37-SC-bAe"/>
                         <outlet property="titleLabel" destination="u75-mi-qlZ" id="82v-1k-fp6"/>
                         <outlet property="yearLabel" destination="OM7-Vz-TL2" id="3Bg-DN-gSl"/>
-                        <segue destination="jS3-qN-Juu" kind="show" id="SIn-Sj-mid"/>
+                        <segue destination="jS3-qN-Juu" kind="show" identifier="trailerSegue1" id="SIn-Sj-mid"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HL5-PA-HqJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -236,7 +236,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1957.9710144927537" y="1492.6339285714284"/>
+            <point key="canvasLocation" x="3412" y="581"/>
         </scene>
         <!--Movies Grid Details View Controller-->
         <scene sceneID="HdX-O0-fpg">
@@ -317,7 +317,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2996" y="1576"/>
+            <point key="canvasLocation" x="3413" y="-214"/>
         </scene>
         <!--Trailer View Controller-->
         <scene sceneID="znT-6x-EDm">
@@ -347,13 +347,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="18h-hE-9eI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2490" y="2377"/>
+            <point key="canvasLocation" x="4348" y="275"/>
         </scene>
-        <!--Item-->
+        <!--List-->
         <scene sceneID="Jvi-KU-VSk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ue2-ec-CK6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="now_playing_tabbar_item" selectedImage="now_playing_tabbar_item" id="NaD-mA-Ngw"/>
+                    <tabBarItem key="tabBarItem" title="List" image="now_playing_tabbar_item" selectedImage="now_playing_tabbar_item" id="NaD-mA-Ngw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="opg-lF-Ibi">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -366,7 +366,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijn-Gz-Lxh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="113"/>
+            <point key="canvasLocation" x="1629" y="581"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="m1v-Yz-KfX">
@@ -385,13 +385,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEe-nG-Sgv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2491" y="-619"/>
+            <point key="canvasLocation" x="749" y="113"/>
         </scene>
-        <!--Item-->
+        <!--Grid-->
         <scene sceneID="24n-MY-bzs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I1R-Qs-tbD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="superhero_tabbar_item" selectedImage="superhero_tabbar_item" id="0eI-0C-kUI"/>
+                    <tabBarItem key="tabBarItem" title="Grid" image="square.grid.2x2.fill" catalog="system" selectedImage="superhero_tabbar_item" id="0eI-0C-kUI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fbs-9b-LrV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -404,14 +404,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQ9-8H-ITu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2996" y="113"/>
+            <point key="canvasLocation" x="1629" y="-214"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QVT-vW-0CA"/>
+        <segue reference="SIn-Sj-mid"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
+        <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
 </document>

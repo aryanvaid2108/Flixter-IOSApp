@@ -128,7 +128,6 @@
 		928517812470C30800BA01B2 /* Flixter */ = {
 			isa = PBXGroup;
 			children = (
-				928517B22470C48A00BA01B2 /* MoviesViewController.swift */,
 				928517822470C30800BA01B2 /* AppDelegate.swift */,
 				928517842470C30800BA01B2 /* SceneDelegate.swift */,
 				928517882470C30800BA01B2 /* Main.storyboard */,
@@ -136,6 +135,7 @@
 				9285178B2470C30A00BA01B2 /* Assets.xcassets */,
 				9285178D2470C30A00BA01B2 /* LaunchScreen.storyboard */,
 				928517902470C30A00BA01B2 /* Info.plist */,
+				928517B22470C48A00BA01B2 /* MoviesViewController.swift */,
 				92C70974247B6A1900033117 /* MovieDetailsViewController.swift */,
 				92C70976247B854300033117 /* MoviesGridViewController.swift */,
 				92C70978247B866100033117 /* MovieGridCell.swift */,

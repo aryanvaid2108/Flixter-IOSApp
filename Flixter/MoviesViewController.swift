@@ -9,7 +9,7 @@
 import UIKit
 import AlamofireImage
 
-class MoviesViewController: UIViewController, UITableViewDataSource,UITableViewDelegate{
+class MoviesViewController: UIViewController{
    
     var movies = [[String:Any]]()
     @IBOutlet weak var tableView: UITableView!
@@ -40,6 +40,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource,UITableViewD
         task.resume()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! MovieDetailsViewController
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        vc.movie = movie
+        tableView.deselectRow(at:indexPath, animated: true)
+    }
+}
+extension MoviesViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
@@ -59,14 +69,5 @@ class MoviesViewController: UIViewController, UITableViewDataSource,UITableViewD
            
            cell.posterView.af.setImage(withURL: posterURL!)
            return cell
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! MovieDetailsViewController
-        let cell = sender as! UITableViewCell
-        let indexPath = tableView.indexPath(for: cell)!
-        let movie = movies[indexPath.row]
-        vc.movie = movie
-        tableView.deselectRow(at:indexPath, animated: true)
     }
 }

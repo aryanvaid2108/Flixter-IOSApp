@@ -63,7 +63,7 @@ class MovieDetailsViewController: UIViewController {
     }
     
     @IBAction func onTap(_ sender: Any) {
-        performSegue(withIdentifier: "trailerSegue", sender: nil)
+        performSegue(withIdentifier: "trailerSegue1", sender: nil)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! TrailerViewController
